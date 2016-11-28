@@ -1,1 +1,1 @@
-# COMP231
+Centennial Meetup
