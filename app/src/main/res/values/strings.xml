@@ -1,9 +1,13 @@
 <resources>
-    <string name="app_name">CentennialMeetup</string>
-    <string name="title_activity_home">HomeActivity</string>
+    <string name="app_name">Centennial Meetup</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="friends">Friends</string>
+
+    <!--User Details-->
+    <string name="username">Default</string>
+    <string name="user_campus">Default Campus</string>
 </resources>
