@@ -84,6 +84,11 @@
                     android:gravity="fill"
                     android:textStyle="normal|bold"
                     android:layout_gravity="fill" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_AddFriend"
+                    android:text="Add Friend"/>
 
 
             </TableRow>
@@ -93,7 +98,7 @@
     <RelativeLayout
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="250dp"
         android:elevation="13dp"
         android:backgroundTint="#a3ffffff"
@@ -101,289 +106,343 @@
         android:id="@+id/relativeLayout"
         android:padding="10dp">
 
-        <TableLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:elevation="6dp"
-            android:backgroundTint="#a3ffffff"
-            android:background="#a3ffffff"
-            android:paddingLeft="5dp"
-
-            android:paddingTop="10dp">
+            android:layout_height="match_parent">
 
 
-            <TableRow
+
+
+
+            <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                >
+                android:layout_marginTop="0dp"
+                android:elevation="6dp"
+                android:backgroundTint="#a3ffffff"
+                android:background="#a3ffffff"
+                android:paddingLeft="5dp"
 
-                <TextView
-                    android:text="First Name"
-                    android:layout_width="wrap_content"
+                android:paddingTop="10dp">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/textView21"
-                    android:textSize="18sp"
-                    android:layout_marginBottom="5dp"
-                    android:textColor="@android:color/background_dark"
-                    android:textStyle="normal|bold"
-                    android:layout_marginRight="5dp"/>
+                    >
 
-                <TextView
+                    <TextView
+                        android:text="First Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView21"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="normal|bold"
+                        android:layout_marginRight="5dp"/>
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_fn"
-                    android:textSize="18sp"
-                    android:layout_weight="1" />
+                    <TextView
 
-                <TextView
-                    android:text="Click"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/edit_fname"
-                    android:textAlignment="viewEnd"
-                    android:clickable="true" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_fn"
+                        android:textSize="18sp"
+                        android:layout_weight="1" />
 
-                <TextView
-                    android:text="Last Name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView30"
-                    android:textSize="18sp"
-                    android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginRight="5dp"/>
+                    <TextView
+                        android:text="Edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_fname"
+                        android:textAlignment="center"
+                        android:clickable="true"
+                        android:layout_weight="1"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
 
-                <TextView
+                    <TextView
+                        android:text="Last Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView30"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"/>
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_ln"
-                    android:textSize="18sp"
-                    android:layout_weight="1"/>
+                    <TextView
 
-                <TextView
-                    android:text="TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView22" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_ln"
+                        android:textSize="18sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:text="Edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_lname"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:textAlignment="center" />
 
 
-            </TableRow>
+                </TableRow>
 
-            <TableRow
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:text="@string/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView16"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_email"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:text="Edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_address"
+                        android:layout_weight="1"
+                        android:clickable="true"
+
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:text="@string/DOB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="18sp"
+
+                        android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/textView15"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_dob"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:text="Edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_email"
+                        android:layout_weight="1"
+                        android:clickable="true"
+
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:text="@string/hobby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView5"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_hobby"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:text="Edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_dob"
+                        android:layout_weight="1"
+                        android:clickable="true"
+
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:text="@string/pos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView7"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_pos"
+                        android:textSize="18sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:text="Edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_hobby"
+                        android:layout_weight="1"
+                        android:clickable="true"
+
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:text="Program"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView11"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_program"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:text="Edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_program"
+                        android:layout_weight="1"
+                        android:clickable="true"
+
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:text="@string/department"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView25"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_dept"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:text="Edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_origin"
+                        android:layout_weight="1"
+                        android:clickable="true"
+
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp">
+
+                    <TextView
+                        android:text="Campus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView14"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_campus"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:text="Edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_campus"
+                        android:layout_weight="1"
+                        android:clickable="true"
+
+                        android:textAlignment="center" />
+
+                </TableRow>
+                <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="5dp">
-
-                <TextView
-                    android:text="Address"
+                android:layout_marginBottom="5dp">>
+                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView16"
-                    android:textSize="18sp"
-                    android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginRight="5dp"
-                    />
-
-                <TextView
-                    android:textSize="18sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_add"
-                    android:layout_weight="1"/>
-
-                <TextView
-                    android:text="TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView24" />
+                    android:id="@+id/btn_SendTextMessage"
+                    android:text="Send Text"
+                    android:onClick="sendAText"/>
             </TableRow>
+            </TableLayout>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="5dp">
+        </ScrollView>
 
-                <TextView
-                    android:text="Email"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:textSize="18sp"
-
-                    android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
-                    android:layout_marginBottom="5dp"
-                    android:id="@+id/textView15"
-                    android:layout_marginRight="5dp"/>
-
-                <TextView
-                    android:textSize="18sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_email"
-                    android:layout_weight="1"/>
-
-                <TextView
-                    android:text="TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView26" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="5dp">
-
-                <TextView
-                    android:text="Date of Birth"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView5"
-                    android:textSize="18sp"
-                    android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginRight="5dp"/>
-
-                <TextView
-                    android:textSize="18sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_dob"
-                    android:layout_weight="1"/>
-
-                <TextView
-                    android:text="TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView27" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="5dp">
-
-                <TextView
-                    android:text="Hobby"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView7"
-                    android:textSize="18sp"
-                    android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginRight="5dp"/>
-
-                <TextView
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_hobby"
-                    android:textSize="18sp"
-                    android:layout_weight="1"/>
-
-                <TextView
-                    android:text="TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView28" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="5dp">
-
-                <TextView
-                    android:text="Program"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView11"
-                    android:textSize="18sp"
-                    android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginRight="5dp"/>
-
-                <TextView
-                    android:textSize="18sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_program"
-                    android:layout_weight="1"/>
-
-                <TextView
-                    android:text="TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView29" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="5dp">
-
-                <TextView
-                    android:text="Origin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView25"
-                    android:textSize="18sp"
-                    android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginRight="5dp"/>
-
-                <TextView
-                    android:textSize="18sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_origin"
-                    android:layout_weight="1"/>
-
-                <TextView
-                    android:text="TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView31" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="0dp">
-
-                <TextView
-                    android:text="Campus"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView14"
-                    android:textSize="18sp"
-                    android:textColor="@android:color/background_dark"                android:textStyle="normal|bold"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginRight="5dp"/>
-
-                <TextView
-                    android:textSize="18sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_campus"
-                    android:layout_weight="1"/>
-
-                <TextView
-                    android:text="TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView32" />
-
-            </TableRow>
-        </TableLayout>
     </RelativeLayout>
 
 

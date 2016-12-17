@@ -12,8 +12,34 @@
     android:background="#47000000">
 
     <TextView
-        android:text="TextView"
+        android:text=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView" />
+        android:id="@+id/heading"
+        android:textAlignment="viewStart" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_below="@+id/heading"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/value"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/value"
+        android:layout_alignEnd="@+id/value"
+        android:layout_marginEnd="77dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/but_update" />
 </RelativeLayout>
