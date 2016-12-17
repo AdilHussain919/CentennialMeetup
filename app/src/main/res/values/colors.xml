@@ -5,4 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="centennialYellow">#EBEB00</color>
     <color name="centennialGray">#494648</color>
+    <color name="listItem1">#ffffff</color>
+    <color name="listItem2">#e8eefe</color>
+    <color name="listItemSelected">#3F51B5</color>
 </resources>

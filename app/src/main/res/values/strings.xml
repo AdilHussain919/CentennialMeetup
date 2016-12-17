@@ -10,4 +10,49 @@
     <!--User Details-->
     <string name="username">Default</string>
     <string name="user_campus">Default Campus</string>
+
+    <string name="id">Centennial Id:</string>
+    <string name="fName">First Name:</string>
+    <string name="lName">Last Name:</string>
+    <string name="email">Email:</string>
+    <string name="DOB">Date Of Birth:</string>
+    <string name="hobby">Hobby:</string>
+    <string name="password">Password:</string>
+    <string name="cPassword">Confirm Password:</string>
+    <string name="department">Department:</string>
+    <string name="student">Student</string>
+    <string name="faculty">Faculty</string>
+    <string name="campus">Campus:</string>
+    <string name="pos">Position:</string>
+    <string name="signup">Create Account</string>
+    <string name="loginLink">Already a member? Login</string>
+    <string name="signupLink">No account yet? Create one</string>
+    <string name="program">Program</string>
+    <string-array name="Department">
+        <item>School of Advancement</item>
+        <item>School of Business</item>
+        <item>School of Communications, Media, Arts and Design</item>
+        <item>School of Community and Health Studies</item>
+        <item>School of Engineering Technology and Applied Science</item>
+        <item>School of Hospitality, Tourism and Culinary Arts</item>
+        <item>School of Transportation</item>
+        <item>Part-time Learning</item>
+
+    </string-array>
+    <string-array name="ICETProgram">
+        <item></item>
+    </string-array>
+    <string-array name="Campus">
+        <item>Progress Campus</item>
+        <item>Morningside Campus</item>
+    </string-array>
+    <string-array name="SearchAttributes">
+        <item>-Select Second Filter-</item>
+        <item>Last Name</item>
+        <item>Department</item>
+        <item>Campus</item>
+
+    </string-array>
+
+
 </resources>
