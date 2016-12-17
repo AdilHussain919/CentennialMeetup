@@ -144,15 +144,16 @@ public class DatabaseManager extends SQLiteOpenHelper {
     }
 
     // Update a record
-    public int updateRecord(ContentValues values, String tableName, String fields[], String record[]) {
+    public int updateRecord(ContentValues values, String tableName, String fields, String record) {
         SQLiteDatabase db = this.getWritableDatabase();
 
-        for (int i=1;i<record.length;i++)
-            values.put(fields[i], record[i]);
+       // for (int i=1;i<record.length;i++)
+         //   values.put(fields[i], record[i]);
 
         // updating row with given id = record[0]
-        return db.update(tableName, values, fields[0] + " = ?",
-                new String[] { record[0] });
+
+        return db.update(tableName, values, fields + " = ?",
+                new String[] { record });
     }
 
     //Selecting Record for particular user
@@ -162,7 +163,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
         String centennialId = "";
         SQLiteDatabase db = this.getReadableDatabase();
 
-        cursor = db.rawQuery("SELECT * FROM "+tableName+" WHERE centennial_id=?", new String[] {centId + ""});
+        cursor = db.rawQuery("SELECT * FROM "+tableName+" WHERE centennialid=?", new String[] {centId + ""});
 
     return cursor;
     }
